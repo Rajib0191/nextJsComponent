@@ -12,9 +12,10 @@ const HomeScreen = () => {
           background: "#101828",
           height: "100vh",
           borderRight: "1px solid #1D2939",
+          zIndex: "-20",
         }}
       >
-        <Sidebar />
+        {/* <Sidebar /> */}
       </div>
       <div
         style={{
@@ -24,8 +25,8 @@ const HomeScreen = () => {
           padding: "40px 0px 40px 40px",
         }}
       >
-        <Banner />
-        <Home />
+        {/* <Banner />
+        <Home /> */}
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import AudioPlayer from "../app/component/Player/AudioPlayer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -11,7 +12,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="relative h-screen">
+          {children}
+          <div className="absolute bottom-0 z-50">
+            <AudioPlayer />
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
