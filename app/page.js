@@ -15,18 +15,19 @@ const HomeScreen = () => {
           zIndex: "-20",
         }}
       >
-        {/* <Sidebar /> */}
+        <Sidebar />
       </div>
       <div
         style={{
           width: "calc(100vw - 220px)",
+          // width: "100vw",
           background: "#0D0F14",
           height: "100vh",
           padding: "40px 0px 40px 40px",
         }}
       >
-        {/* <Banner />
-        <Home /> */}
+        <Banner />
+        {/* <Home /> */}
       </div>
     </div>
   );

@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="relative h-screen">
           {children}
-          <div className="absolute bottom-0 z-50">
+          {/* <div className="absolute bottom-0 z-50">
             <AudioPlayer />
-          </div>
+          </div> */}
         </div>
       </body>
     </html>

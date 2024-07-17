@@ -10,15 +10,10 @@ import {
   MdVolumeOff,
   MdPlayArrow,
   MdPause,
-  MdOutlineSkipNext,
-  MdOutlineSkipPrevious,
   MdRepeat,
 } from "react-icons/md";
-import {
-  IoPlaySkipBackSharp,
-  IoPlaySkipForwardSharp,
-  IoShuffleSharp,
-} from "react-icons/io5";
+import { FaBackwardStep, FaForwardStep } from "react-icons/fa6";
+import { IoShuffleSharp } from "react-icons/io5";
 import { FaChevronUp, FaGift } from "react-icons/fa";
 import { PiPlaylistBold } from "react-icons/pi";
 
@@ -87,16 +82,16 @@ const AudioPlayer = () => {
               />
             </div>
             <div>
-              <IoPlaySkipBackSharp
+              <FaBackwardStep
                 size={24}
                 className="text-[#EAECF0] ml-5 cursor-pointer"
               />
             </div>
             <div className="h-8 w-8 rounded-full bg-[#EAECF0] mx-4 flex justify-center items-center">
-              <MdPause size={28} className="text-[#667085] cursor-pointer" />
+              <MdPause size={24} className="text-[#667085] cursor-pointer" />
             </div>
             <div>
-              <IoPlaySkipForwardSharp
+              <FaForwardStep
                 size={24}
                 className="text-[#EAECF0] mr-5 cursor-pointer"
               />
